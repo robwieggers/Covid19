@@ -13,3 +13,5 @@ RIVM_FILES = {
     "COVID-19_casus_landelijk.csv": BASIC_NATIONAL_DATA_FILENAME,
     "COVID-19_aantallen_gemeente_cumulatief.csv": "cases_regional.csv",
 }
+
+DAILY_CASES_FILENAME = "cases_daily.csv"

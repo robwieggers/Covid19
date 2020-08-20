@@ -1,4 +1,5 @@
-from definitions import ROOT_DIR, RAW_DATA_DIR, PROCESSED_DATA_DIR, RIVM_BASE_URL, RIVM_FILES, BASIC_NATIONAL_DATA_FILENAME
+from definitions import ROOT_DIR, RAW_DATA_DIR, PROCESSED_DATA_DIR, RIVM_BASE_URL, RIVM_FILES, \
+    BASIC_NATIONAL_DATA_FILENAME, DAILY_CASES_FILENAME
 from pathlib import Path
 
 
@@ -59,3 +60,12 @@ def get_basic_national_data_filename() -> str:
     """
 
     return BASIC_NATIONAL_DATA_FILENAME
+
+
+def get_daily_cases_filename():
+    """
+    Returns the filename for the daily cases (processed data)
+    Returns:
+
+    """
+    return DAILY_CASES_FILENAME
