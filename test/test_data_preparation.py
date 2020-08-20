@@ -3,7 +3,7 @@ import os
 from src.prepare.prepare_national_daily_data import generate_daily_aggregates
 from src.utils import get_processed_data_path, get_daily_cases_filename
 
-def test01_test_daily_aggragates():
+def test11_test_daily_aggragates():
 
     generate_daily_aggregates()
     # data path should exist
