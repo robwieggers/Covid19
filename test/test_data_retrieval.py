@@ -3,11 +3,13 @@ Test retrieval of files
 """
 
 import os
+import sys
+print(sys.path)
 
+from src.utils import get_data_path, get_rivm_filenames
+from src.ingest.load_data import retrieve_rivm_datasets
 
 def test01_rivm_data_retrieval():
-    from src.utils import get_data_path, get_rivm_filenames
-    from src.ingest.load_data import retrieve_rivm_datasets
 
     retrieve_rivm_datasets()
 
