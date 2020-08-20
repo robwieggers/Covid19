@@ -37,3 +37,5 @@ def get_rivm_filenames() -> dict:
     Returns: dictionary of RIVM filenames
 
     """
+
+    return RIVM_FILES
