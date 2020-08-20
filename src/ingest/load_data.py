@@ -7,7 +7,7 @@ This module loads data from various data sources
 import os
 import urllib.request
 
-from src.utils import get_data_path, get_rivm_base_url, get_rivm_filenames
+from src.utils import get_raw_data_path, get_rivm_base_url, get_rivm_filenames
 
 
 def retrieve_rivm_datasets():
@@ -18,9 +18,9 @@ def retrieve_rivm_datasets():
 
     files_to_retrieve = get_rivm_filenames()
 
-    data_path = get_data_path()
+    data_path = get_raw_data_path()
     if not os.path.exists(data_path):
-        os.makedirs(get_data_path())
+        os.makedirs(get_raw_data_path())
 
     for remote_filename, local_filename in files_to_retrieve.items():
         remote_path = os.path.join(get_rivm_base_url(), remote_filename)

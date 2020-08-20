@@ -1,4 +1,4 @@
-from definitions import ROOT_DIR, DATA_DIR, RIVM_BASE_URL, RIVM_FILES
+from definitions import ROOT_DIR, RAW_DATA_DIR, PROCESSED_DATA_DIR, RIVM_BASE_URL, RIVM_FILES, BASIC_NATIONAL_DATA_FILENAME
 from pathlib import Path
 
 
@@ -12,14 +12,24 @@ def get_root_path() -> Path:
     return ROOT_DIR
 
 
-def get_data_path() -> Path:
+def get_raw_data_path() -> Path:
     """
     Return the data directory within the project
     Returns: path of data directory within the project
 
     """
 
-    return DATA_DIR
+    return RAW_DATA_DIR
+
+
+def get_processed_data_path() -> Path:
+    """
+    Return the data directory within the project
+    Returns: path of data directory within the project
+
+    """
+
+    return PROCESSED_DATA_DIR
 
 
 def get_rivm_base_url() -> Path:
@@ -39,3 +49,13 @@ def get_rivm_filenames() -> dict:
     """
 
     return RIVM_FILES
+
+
+def get_basic_national_data_filename() -> str:
+    """
+    Returns the filename of the file with national basic data
+    Returns:
+
+    """
+
+    return BASIC_NATIONAL_DATA_FILENAME
