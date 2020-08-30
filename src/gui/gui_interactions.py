@@ -30,13 +30,15 @@ def load_daily_cases_plot_data(path: str) -> pd.DataFrame:
         for c in df.columns:
             if c == "cases_daily":
                 type = "bar"
-                width = None
+                opacity = 0.6
             else:
                 type = "lines"
-                width = 14
+                opacity = 1
+
             tmp = {
                 "x": list(df.index),
                 "y": list(df[c]),
+                "opacity": opacity,
                 "type": type,
                 "name": c.split("_")[-2],
                 "mode": "lines"
