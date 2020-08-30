@@ -9,6 +9,9 @@ from src.ingest.load_data import retrieve_rivm_datasets
 
 
 def test01_rivm_data_retrieval():
+    """
+    Test that data can be retrieved from rivm
+    """
 
     data_path = get_raw_data_path()
     retrieve_rivm_datasets(data_path)

@@ -12,9 +12,11 @@ def test11_test_writing_daily_aggregates():
 
     """
 
-    df_raw = pd.read_csv(os.path.join(get_raw_data_path(), get_basic_national_data_filename()), sep=";")
-    df = generate_daily_aggregates(df_raw)
+    # df_raw = pd.read_csv(os.path.join(get_raw_data_path(), get_basic_national_data_filename()), sep=";")
+    # df = generate_daily_aggregates(df_raw)
+    df = pd.DataFrame()
     store_daily_aggregates(df, get_processed_data_path())
+
     # data path should exist
     assert(os.path.exists(get_processed_data_path()))
 
