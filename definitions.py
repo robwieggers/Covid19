@@ -5,6 +5,9 @@ DATA_DIR = os.path.join(ROOT_DIR, "data")
 RAW_DATA_DIR = os.path.join(DATA_DIR, "raw")
 PROCESSED_DATA_DIR = os.path.join(DATA_DIR, "processed")
 
+# paths for testing
+TEST_DATA_DIR = os.path.join(ROOT_DIR, "test" ,"data")
+
 RIVM_BASE_URL = 'https://data.rivm.nl/covid-19/'
 
 BASIC_NATIONAL_DATA_FILENAME = "cases_NL.csv"

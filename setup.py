@@ -22,7 +22,10 @@ setup(
         "src.ingest",
     ],
     package_dir={"": "."},
-    package_data={},
+    package_data={"test": ["data/cases_NL.csv",
+                           "data/cases_regional.csv",
+                          ]
+                  },
     scripts=[os.path.join("src", "app.py")],
 
     install_requires=open("requirements.txt", "r").readlines())

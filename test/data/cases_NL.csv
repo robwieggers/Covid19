@@ -1,0 +1,7 @@
+Date_file;Date_statistics;Date_statistics_type;Agegroup;Sex;Province;Hospital_admission;Deceased;Week_of_death;Municipal_health_service
+2020-08-20 10:00:00;2020-08-20;DON;50-59;Male;Zuid-Holland;Unknown;Unknown;;GGD Rotterdam Rijnmond
+2020-08-20 10:00:00;2020-08-20;DPL;60-69;Male;Noord-Holland;Unknown;Unknown;;GGD Amsterdam
+2020-08-20 10:00:00;2020-08-20;DON;50-59;Female;Zuid-Holland;Unknown;Unknown;;GGD Rotterdam Rijnmond
+2020-08-20 10:00:00;2020-08-20;DON;50-59;Female;Zuid-Holland;Unknown;Unknown;;GGD Rotterdam Rijnmond
+2020-08-20 10:00:00;2020-08-20;DPL;20-29;Female;Noord-Holland;Unknown;Unknown;;GGD Amsterdam
+2020-08-20 10:00:00;2020-08-20;DPL;40-49;Female;Flevoland;No;No;;GGD Flevoland
