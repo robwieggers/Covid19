@@ -1,9 +1,8 @@
 from definitions import ROOT_DIR, RAW_DATA_DIR, PROCESSED_DATA_DIR, RIVM_BASE_URL, RIVM_FILES, \
     BASIC_NATIONAL_DATA_FILENAME, DAILY_CASES_FILENAME
-from pathlib import Path
 
 
-def get_root_path() -> Path:
+def get_root_path() -> str:
     """
     Return the root of project
     Returns: path of root of project
@@ -13,7 +12,7 @@ def get_root_path() -> Path:
     return ROOT_DIR
 
 
-def get_raw_data_path() -> Path:
+def get_raw_data_path() -> str:
     """
     Return the data directory within the project
     Returns: path of data directory within the project
@@ -23,7 +22,7 @@ def get_raw_data_path() -> Path:
     return RAW_DATA_DIR
 
 
-def get_processed_data_path() -> Path:
+def get_processed_data_path() -> str:
     """
     Return the data directory within the project
     Returns: path of data directory within the project
@@ -33,7 +32,7 @@ def get_processed_data_path() -> Path:
     return PROCESSED_DATA_DIR
 
 
-def get_rivm_base_url() -> Path:
+def get_rivm_base_url() -> str:
     """
     Return the base url where RIVM shares data
     Returns: vase url to RIVM data
@@ -62,7 +61,7 @@ def get_basic_national_data_filename() -> str:
     return BASIC_NATIONAL_DATA_FILENAME
 
 
-def get_daily_cases_filename():
+def get_daily_cases_filename() -> str:
     """
     Returns the filename for the daily cases (processed data)
     Returns:
